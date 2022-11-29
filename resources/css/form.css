@@ -1,0 +1,74 @@
+/*Importando a fonte POPPINS do Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family= Poppins: wght @300;400;500 & display=swap');
+
+/*Definindo Configurações gerais de cada elemento da página HTML*/
+*{
+    margin: 0;
+    padding: 0;
+    /*Inclui o percentual da borda no percentual total do elemento*/
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-image:linear-gradient(to right,#292929, #8000ff);
+}
+
+form{
+    width: 40%;
+    /*Usando esta propriedade para que quando a tela diminuir o formulario não perca sua formatação*/
+    min-width: 350px;
+    border-radius: 5px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.5);
+    margin: 100px auto;
+    padding: 20px;
+}
+
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #FFF;
+}
+
+input{
+    min-width: 320px;
+    height: 40px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 5px;
+    border: 1px solid #c1c1c1;
+    margin-top: 20px;
+    padding-left: 10px;
+
+}
+
+textarea{
+    min-width: 320px;
+    height: 200px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 5px;
+    border: 1px solid #c1c1c1;
+    margin-top: 20px;
+    padding: 10px 0 0 10px;
+}
+
+button{
+    display: block;
+    margin: 10px auto ;
+    height: 40px;
+    min-width: 320px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(238, 255, 0);
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover,
+button:active{
+    opacity: 0.5;
+}

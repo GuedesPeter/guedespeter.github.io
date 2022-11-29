@@ -1,0 +1,600 @@
+
+/*---------------------------- CONFIGURAÇÕES DA PÁGINA -------------------------------------------*/
+
+/* Define como padrão estas propriedades para cada elemento do HTML*/
+*{
+    margin: 0;
+    padding: 0;
+    /*Inclui o percentual da borda no percentual total do elemento*/
+    box-sizing: border-box;
+    
+}
+
+/*Definindo propriedades para o HTML*/
+html{
+    font-family: 'Roboto','Bebas Naue', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    /*Otimiza a rendenização da fonte para leitura (optimizeLegibility - Qualidade Máxima)*/
+    text-rendering: optimizeLegibility;
+    
+    
+}
+
+
+/*----------------------------------------- HERO HEADER -------------------------------------------*/
+
+header {
+    /*Inserindo Imagem de fundo no Hero Header e definindo a transparência em cima da imagem*/
+    background-image:
+        /*Coloca a transparencia Criando um GRADIENTE ENTRE DUAS CORES*/ 
+        linear-gradient(rgba(5, 5, 5, 0.801), rgba(0, 0, 0, 0.4)),
+        /*Insere a imagem*/
+        url(img/caixas.jpg);
+
+    /*Definindo altura do Hero Header - (n° + vh define a porcentagem de altura do viewport)*/
+    height: 100vh;
+    /*Adaptando a imagem de fundo ao Hero Header - COVER(cobre todo o Hero Header mostrando o máximo possível)*/
+    background-size: cover;
+    /*Define a posição da imagem de fundo do Hero Header*/
+    background-position: center;
+    width: 98%;
+    margin: 0 auto;
+    
+
+}
+
+
+
+/*------------------------------------------------ MENU -------------------------------------------*/
+.menu{
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    
+    
+}
+
+.logo{
+    height: 100px;
+    margin-top: 20px;
+}
+
+
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    text-transform: uppercase;
+}
+
+nav ul li{
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: #FFF;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover{
+    background-color: rgba(66, 65, 65, 0.363);
+    color:rgb(255, 72, 0);
+}
+
+nav .menu-btn i{
+    color: #FFF;
+    cursor: pointer;
+    /*Faz com que o icone do menu desapareça*/
+    display: none;
+
+}
+
+
+.titulo-principal{
+    max-width: 960px;
+    margin: 100px auto 10px auto;
+    font-size: 55px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    color: #FFF;
+    display: flex;
+    justify-content: space-around;
+    align-items:flex-start;
+    flex-wrap: wrap;
+    
+}
+
+.h2-menu{
+    max-width: 960px;
+    margin: 10px auto;
+    font-size: 30px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    color: #FFF;
+    display: flex;
+    justify-content: space-around;
+    align-items:flex-start;
+    flex-wrap: wrap;
+    
+}
+
+/*---------------------------- SECTION DEFINIÇÃO-------------------------------------------*/
+.sobre{
+    width: 98%;
+    margin: 10px auto;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    background-image: linear-gradient(rgba(212, 250, 211, 0.144),rgba(0, 0, 0, 0.349));
+    
+    border: 1px solid #000;
+    border-radius: 4px;
+    box-shadow:  5px 5px 15px #000;
+   
+}
+
+.h2-sobre{
+    width: 100%;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin: 35px;
+    padding: 5px;
+    color: #000;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+
+
+.sobre article{
+    font-size: 20px;
+    font-weight: 500;
+    /*Define o espaçamento entre as palavras*/
+    word-spacing: 1px;
+    width: 95%;
+    
+    padding: 3px;
+    margin: 20px 15px;
+}
+
+.accordion-body{
+    display: flex;
+    flex-wrap: wrap;
+}
+.accordion-body p{
+    width: 50%;
+    padding: 10px;
+}
+.video-sobre{
+    margin: 0 auto 10px auto;
+}
+.video-sobre iframe{
+    width: 900px;
+    height: 500px;
+
+    border: 1px solid #000;
+    border-radius: 4px;
+    box-shadow:  5px 5px 15px #000;
+    
+    
+}
+
+/*---------------------------- SECTION FOTOS ---------------------------------------------*/
+
+.fotos{
+   width: 98%;
+   margin: 0 auto;
+   overflow: hidden;
+
+ 
+}
+
+
+
+
+
+/*---------------------------- SECTION TIPOS ---------------------------------------------*/
+.tipos{
+    width: 98%;
+    margin: 10px auto;
+    padding: 20px;
+    overflow: hidden;
+    display: flex;
+    /* Coloca o conteúdo em linha e permite a quebra de linha.*/
+    flex-flow: row;
+    justify-content: space-around;
+    background-image: linear-gradient(rgba(138, 138, 138, 0.623), rgba(0, 0, 0, 0.4)),
+    url(img/fundo-tipos2.jpg);
+    /*Adaptando a imagem de fundo a seção TIPOS - COVER(cobre todo a seção mostrando o máximo possível)*/
+    background-size: cover;
+    
+       
+}
+
+.art-tipos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+ .h2-tipos{
+    width: 300px;
+    height: 180px;
+    text-transform: uppercase;
+    font-size: 35px;
+    font-weight: 500;
+    margin: 35px;
+    padding: 5px;
+    color: #FFF;
+    
+ }
+
+ .h2-tipos a{
+    text-decoration: none;
+    color: #FFF;
+ }
+
+ 
+ .h2-tipos:hover{
+   
+    color: #FFF;
+    background-color: rgb(218, 6, 6);
+    border:1px solid #FFF;
+    border-radius: 5px;
+    
+    animation: pulse ;
+    animation-duration: 2s;
+    
+    
+ }
+
+ 
+ /*---------------------------- SECTION MAIS ---------------------------------------------*/
+
+.mais{
+    width: 98%;
+    margin: 0 auto;
+    padding: 30px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.74),rgba(173, 169, 169, 0.452),#000);
+
+}
+
+.titulo-mais{
+    display: flex;
+    width: 98%;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px auto ;
+    padding: 5px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #FFF;
+
+    border: 1px solid #000;
+    border-radius: 4px;
+    box-shadow:  5px 5px 15px #000;
+
+}
+
+.titulo-mais:hover{
+    animation: pulse ;
+    animation-duration: 1s;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+	
+    
+}
+
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 350px;
+
+    /*
+    FLEX GROW:
+    Define a habilidade de um flex item crescer. Por padrão o valor é zero, assim os flex itens ocupam um tamanho máximo relacionado o conteúdo interno deles ou ao width definido.
+    Ao definir 1 para todos os Flex Itens, eles tentarão ter a mesma largura e vão ocupar 100% do container. Digo tentarão pois caso um elemento possua um conteúdo muito largo, ele irá respeitar o mesmo.*/
+
+    /*
+    FLEX SHRINK
+    Define a capacidade de redução de tamanho do item.
+    Permite que os itens tenham os seus tamanhos (seja esse tamanho definido a partir de width ou flex-basis) reduzidos para caber no container.*/
+    
+    /*
+    FLEX BASIS
+    Indica o tamanho inicial do flex item antes da distribuição do espaço restante.
+    Quando definimos o flex-grow: 1; e possuímos auto no basis, o valor restante para ocupar o container é distribuído ao redor do conteúdo do flex-item.
+    */
+}
+
+/*---------------------------- FOOTER ---------------------------------------------*/
+
+.cabeçalho{
+    width: 98%;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #000;
+    color: #FFF;
+    text-transform: uppercase;
+   
+
+    border: 1px solid #000;
+    border-radius: 4px;
+    box-shadow:  5px 5px 15px #000;
+}
+
+
+
+.cabeçalho img{
+    height: 130px;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+
+.redes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.lista-redes{
+    /*Exclui os marcadores da lista*/
+    list-style-type: none;
+    
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.item-redes a{
+    color: #FFF;
+    padding: 10px;
+    font-size: 30px;
+}
+
+.item-redes a:hover{
+    opacity: 0.4;
+}
+
+
+.news{
+    font-weight: 600;
+    
+}
+
+.news a{
+    text-decoration: none;
+    text-align: center;
+    font-size: 30px;
+    padding: 10px;
+    color: #FFF;
+    border-radius: 15px;
+
+}
+
+.news a:hover{
+    background-color:  rgb(255, 0, 0);
+    color: #000;
+}
+
+
+.topo{
+    width: 98%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 10px;
+    background-color: #000;
+}
+ .topo a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+ }
+
+.topo a:hover{
+    opacity: 0.4;
+}
+
+
+ /*---------------------------- MEDIA HEADER -------------------------------------------*/
+@media only screen and (max-width: 816px){
+    header{
+        background-image:
+        /*Coloca a transparencia Criando um GRADIENTE ENTRE DUAS CORES*/ 
+        linear-gradient(rgba(5, 5, 5, 0.801), rgba(0, 0, 0, 0.4)),
+        /*Insere a imagem*/
+        url(img/caixas860.jpg);
+    } 
+}
+
+@media only screen and (max-width:750px){
+    header{
+        background-image:
+        /*Coloca a transparencia Criando um GRADIENTE ENTRE DUAS CORES*/ 
+        linear-gradient(rgba(5, 5, 5, 0.801), rgba(0, 0, 0, 0.4)),
+        /*Insere a imagem*/
+        url(img/caixas520.jpg);
+    }
+    .titulo-principal{
+        font-size: 40px;
+        font-weight: 400;
+        
+    }
+    .h2-menu{
+        font-size: 20px;
+        font-weight: 200;
+       
+    }
+    
+}
+
+@media only screen and (max-width: 720px){
+    header{
+        background-image:
+        /*Coloca a transparencia Criando um GRADIENTE ENTRE DUAS CORES*/ 
+        linear-gradient(rgba(5, 5, 5, 0.801), rgba(0, 0, 0, 0.4)),
+        /*Insere a imagem*/
+        url(img/caixas520.jpg);
+    }
+    .titulo-principal{
+        font-size: 40px;
+        font-weight: 400;
+        opacity: 0.8;
+    }
+    .h2-menu{
+        font-size: 20px;
+        font-weight: 200;
+        opacity: 0.8;
+    }
+}
+
+/*---------------------------- MEDIA MENU -------------------------------------------*/
+@media only screen and (max-width: 720px) {
+   
+    nav .menu-btn i{
+        /*Faz com que o Icone de menu volte a aparecer*/
+        display: block;
+        
+    }
+
+    nav .menu-btn i:hover{
+        color:rgb(255, 72, 0); 
+        transition: 0.4s;
+    }
+
+     nav ul{
+        /*Propriedades para remover os itens do menu da tela*/
+        position: fixed;
+        top: 90px;
+        left: -100%;
+        background-image: 
+        linear-gradient(rgba(5, 5, 5, 0.801), rgba(0, 0, 0, 0.4));
+        height: 100vh;
+        width: 100vw;
+        
+        text-align: justify;
+        display: block;
+        transition: all 0.3s ease;
+        /*Faz com que o MENU fique posiciona a frente de todos os outros elementos do site*/
+        z-index: 999;
+    }
+
+
+
+    /*A classe OPEN é adicionada através do JAVASCRIPT*/
+    nav ul.open{
+        left: 0;
+        
+    }
+
+
+    nav ul li{
+        width: 100%;
+        margin: 50px 0; 
+        
+    }
+
+    nav ul li a{
+        font-size: 24px;
+        font-weight: bold;
+        
+    }
+
+    nav ul li a:hover{
+        background-color: rgba(66, 65, 65, 0.363);
+        color: rgb(255, 72, 0);
+    }
+}
+
+/*-------------------------------- MEDIA SECTION SOBRE ---------------------------------------*/
+
+@media only screen and (max-width: 1300px){
+    .sobre article{
+        font-size: 26px;
+        }
+
+    .video-sobre iframe{
+        width: 800px;
+        height: 400px;
+    }
+    }
+
+
+    @media only screen and (max-width: 860px){
+        .sobre article{
+            
+            font-size: 28px;
+        }
+
+        .video-sobre iframe{
+            width: 700px;
+            height: 550px;
+        }
+    }
+    
+
+
+    @media only screen and (max-width: 730px){
+        .sobre article{
+            font-size: 30px;
+        }
+    
+
+    .video-sobre iframe{
+        width: 500px;
+        height: 400px;
+    }
+}
+
+
+
+/*---------------------------- MEDIA SECTION TIPOS -------------------------------------------*/
+
+@media only screen and (max-width: 816px){
+    .tipos{
+        display: flex;
+        flex-wrap: wrap;
+        background-image: linear-gradient(rgba(138, 138, 138, 0.623), rgba(0, 0, 0, 0.4)),
+        url(img/fundo-tipos860.jpg);
+    }
+
+    .h2-tipos{
+        width: 300px;
+        height: 180px;
+        font-size: 25px;
+        font-weight: 500;
+        margin: 35px;
+        padding: 5px;
+        color: #FFF;
+    }
+
+}
+
